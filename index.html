@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Define a responsividade da página para diferentes dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS que contém os estilos da calculadora -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Link para o arquivo JavaScript que contém a lógica da calculadora (executado de forma assíncrona com 'defer') -->
     <script src="./assets/js/script.js" defer></script>
+    <!-- Define o título da página que será exibido na aba do navegador -->
     <title>Calculadora</title>
 </head>
 <body>
+    <!-- A div "container" irá conter todos os elementos da calculadora -->
     <div class="container">
+        <!-- A div "tela" irá exibir o valor da calculadora (inicialmente '0') -->
         <div class="tela">0</div>
+        
+        <!-- Botões da calculadora -->
+        <!-- Botão de limpar, que define o valor da tela como '0' -->
         <input type="button" value="C" class="btn">
+        <!-- Botão de adição -->
         <input type="button" value="+" class="btn operador">
+        <!-- Botões numéricos -->
         <input type="button" value="1" class="btn">
         <input type="button" value="2" class="btn">
         <input type="button" value="3" class="btn">
+        <!-- Botão de subtração -->
         <input type="button" value="-" class="btn operador">
         <input type="button" value="4" class="btn">
         <input type="button" value="5" class="btn">
         <input type="button" value="6" class="btn">
+        <!-- Botão de multiplicação -->
         <input type="button" value="*" class="btn operador">
         <input type="button" value="7" class="btn">
         <input type="button" value="8" class="btn">
         <input type="button" value="9" class="btn">
+        <!-- Botão de divisão -->
         <input type="button" value="/" class="btn operador">
+        <!-- Botão de zero -->
         <input type="button" value="0" class="btn">
+        <!-- Botão de vírgula (para números decimais) -->
         <input type="button" value="," class="btn">
         
+        <!-- Botão de igual, que deve calcular e mostrar o resultado -->
         <input type="button" value="=" class="btn operador">
     </div>
 </body>
