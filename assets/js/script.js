@@ -4,9 +4,13 @@ btns.forEach((btn) =>
   btn.addEventListener('click', (e)=>{
     const valor = e.target.value
     if (valor!== '=') {
-        tela.innerText += valor
+        if (tela.innerText == "0") {
+            tela.innerText = valor
+        } else {
+            tela.innerText += valor
+        }
         if (valor === 'C') {
-            tela.innerText = ''
+            tela.innerText = '0'
         }
     } else {
         // console.log(eval(tela.innerText))
